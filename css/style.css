@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    cursor: pointer;
+    height: 60px;
+
+   
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.nav-list li{
+    display: none;
+    display: inline-block;
+    list-style: none;
+    padding: 30px 60px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+
+}
+.nav-list li a{
+    width: 50%;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    font-family:'Ubuntu', sans-serif; 
+}
+
+.nav-list li a:hover{
+    color: white;
+    color:grey;
+    text-decoration: none;
+
+}
+.rightNav{
+    width: 50%;
+    text-align: right;
+    padding: 0 15px;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.firstHalf{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.secondHalf{
+    width: 8%;
+
+}
+.secondHalf img{
+    width: 300%;
+    border: 2px solid white;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+
+
+}
+.text-big{
+    font-size: 28px;
+
+
+}
+.text-small{
+    font-size: 18px;
+}
+.btn{
+    padding: 7px 10px;
+    margin:6px 1px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif; 
+    font-size: 15px;
+}
+.btn-sm{
+    padding: 4px 8px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid grey;
+}
+.section{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.section-left{
+    flex-direction: row-reverse;
+
+    
+}
+.sectionTag{
+    padding: 20px 0px;
+}
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.paras{
+    padding: 0px 55px;
+}
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 24px;
+    margin-top: 8px;
+}
+.contact{
+    background-color: rgb(228, 234, 240);
+    height: 600px;
+
+}
+.text-center{
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+.form{
+    max-width: 900px;
+    margin: 20px auto;
+}
+.form-input{
+    margin: 10px 0px;
+    padding: 2px 13px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.text-footer{
+    text-align: center;
+    padding: 20px 0;
+    font-family:  'Ubuntu', sans-serif; 
+   display: flex;
+   justify-content: center;
+   color: white;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 12px;
+}
+.line{
+    width: 30px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width: 920px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 70px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
